@@ -1,82 +1,68 @@
 
-# Simulador de venta de entradas
+# 🎟️ Simulador de Venta de Entradas
 
-Proyecto desarrollado para las Pre-Entregas 3 y 4 del curso de JavaScript de Coderhouse.
+## Pre-Entrega 7 - JavaScript | Coderhouse
 
-## Descripción
+Proyecto desarrollado como parte del curso de JavaScript de Coderhouse.
 
-Simulador de venta de entradas para un evento que permite seleccionar entradas de tipo General, Preferencial o VIP, calcular el total de la compra y mostrar un resumen final.
+El simulador permite gestionar entradas para un evento mediante una interfaz interactiva, utilizando JavaScript, manipulación del DOM y eventos.
 
-Además, incorpora un sistema de gestión de asistentes que permite registrar nuevos participantes, consultar si están registrados, conocer su posición en la lista, modificar nombres y eliminar registros.
+## 🚀 Funcionalidades
 
-## Funcionalidades
+- Visualización dinámica de entradas disponibles.
+- Creación de nuevas entradas mediante un formulario.
+- Eliminación de entradas.
+- Búsqueda de entradas en tiempo real.
+- Mensajes de confirmación al agregar entradas.
+- Mensaje cuando no se encuentran resultados.
+- Actualización de la interfaz sin recargar la página.
 
-- Venta de entradas General, Preferencial y VIP.
-- Cálculo del total de la compra.
-- Registro de asistentes mediante arrays.
-- Manipulación de listas con `push()`, `unshift()` y `pop()`.
-- Búsqueda de asistentes mediante `includes()` e `indexOf()`.
-- Modificación de registros utilizando `splice()`.
-- Recorrido de asistentes mediante `for...of`.
-- Validación de datos ingresados por el usuario.
-- Resumen final de la compra.
-
-## Tecnologías y conceptos utilizados
-
-JavaScript, HTML, variables, arrays, funciones, parámetros, `return`, condicionales y ciclos.
-
-## Cómo ejecutarlo
-
-1. Descargar o clonar el repositorio.
-2. Abrir el archivo `index.html` en un navegador.
-3. Interactuar con el simulador mediante las ventanas emergentes (`prompt` y `alert`).
-4. Abrir la consola del navegador con `F12` para visualizar los resultados.
-
-## Pre-Entrega 5 - Instanciando Objetos
-
-En esta entrega se incorporó programación orientada a objetos al simulador de venta de entradas.
-
-### Funcionalidades agregadas
-
-- Creación de una clase Entrada utilizando class.
-- Uso de constructor y this para definir las propiedades tipo, precio, sector y stock.
-- Instanciación de tres objetos mediante new: General, Preferencial y VIP.
-- Implementación del método vender() para descontar entradas del stock.
-- Verificación de disponibilidad antes de realizar una compra.
-- Integración de los objetos con el menú de compras, las funciones, los ciclos y los arrays existentes.
-- Visualización de los objetos y del stock actualizado mediante console.log().
-
-### Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
 - HTML5
+- CSS3
 - JavaScript
-- Programación orientada a objetos
-- Arrays, funciones, condicionales y ciclos
 
-## Pre-Entrega 6 - Funciones de Orden Superior
+## 📚 Conceptos aplicados
 
-En esta entrega se incorporaron funciones de orden superior al simulador de venta de entradas, permitiendo consultar y transformar la información almacenada en un array de objetos.
+- Clases y objetos.
+- Arrays y métodos `push()`, `splice()`, `filter()` e `indexOf()`.
+- Manipulación del DOM.
+- `innerHTML` y template literals.
+- Eventos `submit`, `click` e `input`.
+- `addEventListener()`.
+- `preventDefault()`.
+- Delegación de eventos.
+- Diseño responsive con CSS Grid y Flexbox.
 
-### Funcionalidades agregadas
+## 📁 Estructura del proyecto
 
-- Creación de un array de objetos a partir de las instancias de la clase Entrada.
-- Implementación de find() para buscar una entrada según su tipo.
-- Implementación de filter() para consultar las entradas con stock disponible.
-- Implementación de map() para generar una lista de tipos de entrada y precios.
-- Incorporación de nuevas opciones al menú interactivo.
-- Integración de los métodos con las clases, funciones, arrays y ciclos de las entregas anteriores.
-- Visualización de los resultados mediante console.log().
+```text
+pre-entrega-3/
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── index.html
+├── README.md
+└── .gitignore
+```
 
-### Nuevas opciones del menú
+## ▶️ Cómo ejecutar el proyecto
 
-- Opción 5: Buscar una entrada.
-- Opción 6: Ver entradas disponibles.
-- Opción 7: Ver lista de precios.
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Abrir `index.html` en el navegador o utilizar Live Server.
+4. Interactuar con el formulario, el buscador y las tarjetas.
 
-### Conceptos aplicados
+## 🎨 Diseño
 
-- Funciones de orden superior.
-- Funciones flecha.
-- Métodos find(), filter() y map().
-- Arrays de objetos.
-- Programación orientada a objetos.
+La interfaz utiliza una paleta de colores verde salvia y verde bosque, con tarjetas individuales, botones interactivos y un diseño adaptable.
+
+## 📌 Observaciones
+
+Los datos se gestionan temporalmente en memoria mediante un array de objetos. Al recargar la página, se restauran las entradas iniciales.
+
+## 🔗 Repositorio
+
+https://github.com/marcoponzini04-creator/PreEntrega7-JavaScript
