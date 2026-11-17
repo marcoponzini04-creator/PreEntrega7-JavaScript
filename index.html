@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de venta de entradas</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>🎟️ Simulador de venta de Entradas</h1>
+        <p>Gestioná tus entradas de forma rápida y sencilla.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Agregar nueva entrada</h2>
+
+            <form id="formulario-entrada">
+                <label for="tipo">Tipo de entrada:</label>
+                <input type="text" id="tipo" required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" min="1" required>
+
+                <label for="sector">Sector:</label>
+                <input type="text" id="sector" required>
+
+                <label for="stock">Stock disponible:</label>
+                <input type="number" id="stock" min="0" required>
+
+                <button type="submit">Agregar entrada</button>
+                <p id="mensaje-entrada"></p>
+            </form>
+        </section>
+        <!-- Sección donde mostraremos las entradas -->
+         <section>
+            <h2>Entradas disponibles</h2>
+
+            <input
+                type="text"
+                id="buscador-entradas"
+                placeholder="Buscar entrada por tipo..."
+            >
+            <div id="contenedor-entradas"></div>
+         </section>
+    </main>
 </body>
 </html>
